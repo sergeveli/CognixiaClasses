@@ -1,3 +1,7 @@
+# using Python, write a Rock - Paper - Scissors program that accepts the user's input, and make sure that input is either 'r', 'p', or 's'.
+# Ask for a second user's input and make sure that input is also only 'r', 'p', or 's.'
+# Complete the program to output the results of a rock, paper, scissors game. 
+
 import random
 
 # function to get user input

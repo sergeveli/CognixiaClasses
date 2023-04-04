@@ -1,3 +1,12 @@
+# using a Python, create a dictionary and prompt the user for their 'name', 'age,' and 'years coding' as keys.
+# Prompt the user to enter their first three programming languages, these should be stored as a tuple. 
+# Prompt the user to enter their three favorite programming languages, these should be stored as a list. 
+# Create a set that is an intersection of their first programming languages and their favorite programming languages. 
+# Add all these collections as values to the dictionary you created, with appropriate key. 
+# Format a print statement to print the relevant data to the console.
+
+
+
 # Prompt the user for their name, age, and years coding
 name = input("What is your name? ")
 age = int(input("What is your age? "))
@@ -29,3 +38,5 @@ print(f"Name: {data['name']}\nAge: {data['age']}\nYears Coding: {data['years_cod
       f"First Programming Languages: {data['prog_langs_first']}\n"
       f"Favorite Programming Languages: {data['prog_langs_fav']}\n"
       f"Intersection of First and Favorite Programming Languages: {data['prog_langs_intersection']}")
+
+
