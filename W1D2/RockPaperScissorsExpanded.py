@@ -22,11 +22,14 @@ def get_user_choice():
 def get_winner(player1, player2):
     if player1 == player2:
         return "draw"
-    elif player1 == 'r' and player2 == 's':
-        return "Player 1 wins"
-    elif player1 == 'p' and player2 == 'r':
-        return "Player 1 wins"
-    elif player1 == 's' and player2 == 'p':
+    elif (
+        player1 == 'r'
+        and player2 == 's'
+        or player1 == 'p'
+        and player2 == 'r'
+        or player1 == 's'
+        and player2 == 'p'
+    ):
         return "Player 1 wins"
     else:
         return "Player 2 wins"
