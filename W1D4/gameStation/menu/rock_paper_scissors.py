@@ -1,22 +1,19 @@
 """Module for playing Rock, Paper, Scissors"""
-
 import random
 
-# Define the game options
 options = ["rock", "paper", "scissors"]
-
-# Define a function to prompt the user for input
-
+"""Define the game options"""
 
 def prompt_input(prompt):
+    """Define a function to prompt the user for input"""
     return input(prompt).strip()
 
-# Define a function to play the game
-
-
 def play_game():
+    """Define a function to play the game"""
+    
     # Load the game progress from the log file
     progress = {"wins": 0, "losses": 0, "ties": 0}
+    
     # Play the game until the user decides to quit
     while True:
         # Display the current game progress
@@ -45,5 +42,6 @@ def play_game():
         else:
             print("Computer wins!")
             progress["losses"] += 1
+            
     # Return the game progress
     return progress
