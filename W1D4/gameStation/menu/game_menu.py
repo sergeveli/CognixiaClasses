@@ -1,3 +1,5 @@
+"""Module providingFunction printing python version."""
+
 import os
 import json
 import rock_paper_scissors
@@ -8,8 +10,8 @@ LOG_FILE = "game_progress.json"
 
 # Load the game progress from the log file
 if os.path.exists(LOG_FILE):
-    with open(LOG_FILE, "r") as f:
-        game_progress = json.load(f)
+    with open(LOG_FILE, "r", encoding="UTF-8") as log_file:
+        game_progress = json.load(log_file)
 else:
     game_progress = {}
 
@@ -24,6 +26,7 @@ menu_options = {
 
 
 def display_menu():
+    """Define a function to display the menu"""
     print("Welcome to the game menu!")
     print("Please select a game to play:")
     for key, value in menu_options.items():
@@ -40,8 +43,8 @@ def prompt_input(prompt):
 
 def save_progress(game_name, progress):
     game_progress[game_name] = progress
-    with open(LOG_FILE, "w") as f:
-        json.dump(game_progress, f)
+    with open(LOG_FILE, "w", encoding="UTF-8") as log_file2:
+        json.dump(game_progress, log_file2)
 
 # Define the main function
 
