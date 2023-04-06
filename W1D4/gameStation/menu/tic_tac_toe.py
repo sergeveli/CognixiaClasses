@@ -1,20 +1,15 @@
 """Module for playing Tic, Tac Toe"""
-
 import random
 
-# Define the game options
 options = ["X", "O"]
-
-# Define a function to prompt the user for input
-
+"""Define the game options"""
 
 def prompt_input(prompt):
+    """Define a function to prompt the user for input"""
     return input(prompt).strip()
 
-# Define a function to display the board
-
-
 def display_board(board):
+    """Define a function to display the board"""
     print("     |     |")
     print(f"  {board[0]}  |  {board[1]}  |  {board[2]}")
     print("_____|_____|_____")
@@ -25,10 +20,8 @@ def display_board(board):
     print(f"  {board[6]}  |  {board[7]}  |  {board[8]}")
     print("     |     |")
 
-# Define a function to check if the game is over
-
-
 def check_game_over(board):
+    """Define a function to check if the game is over"""
     # Check rows
     for i in range(0, 9, 3):
         if board[i : i + 3] in [["X", "X", "X"], ["O", "O", "O"]]:
@@ -44,10 +37,8 @@ def check_game_over(board):
         else " " not in board,
     )
 
-# Define a function to play the game
-
-
 def play_game():
+    """Define a function to play the game"""
     # Load the game progress from the log file
     progress = {"wins": 0, "losses": 0, "ties": 0}
     # Play the game until the user decides to quit
@@ -107,5 +98,4 @@ def play_game():
             progress["losses"] += 1
         else:
             print("Invalid game state!")
-    # Return the game progress
     return progress

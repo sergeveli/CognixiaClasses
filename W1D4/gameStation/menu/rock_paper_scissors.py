@@ -9,11 +9,9 @@ def prompt_input(prompt):
     return input(prompt).strip()
 
 def play_game():
-    """Define a function to play the game"""
-    
+    """Define a function to play the game""" 
     # Load the game progress from the log file
     progress = {"wins": 0, "losses": 0, "ties": 0}
-    
     # Play the game until the user decides to quit
     while True:
         # Display the current game progress
@@ -42,6 +40,4 @@ def play_game():
         else:
             print("Computer wins!")
             progress["losses"] += 1
-            
-    # Return the game progress
     return progress
