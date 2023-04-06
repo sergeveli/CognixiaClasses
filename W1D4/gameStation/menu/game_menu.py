@@ -1,4 +1,4 @@
-"""Module providingFunction printing python version."""
+"""Module for displaying game genu, selecting a game and tracking progress."""
 
 import os
 import json
@@ -15,15 +15,12 @@ if os.path.exists(LOG_FILE):
 else:
     game_progress = {}
 
-# Define the menu options
 menu_options = {
+    """Define Define the menu options"""
     "1": "Rock Paper Scissors",
     "2": "Tic Tac Toe",
     "3": "Exit"
 }
-
-# Define a function to display the menu
-
 
 def display_menu():
     """Define a function to display the menu"""
@@ -32,24 +29,18 @@ def display_menu():
     for key, value in menu_options.items():
         print(f"{key}. {value}")
 
-# Define a function to prompt the user for input
-
-
 def prompt_input(prompt):
+    """Define a function to prompt the user for input"""
     return input(prompt).strip()
 
-# Define a function to save the game progress to the log file
-
-
 def save_progress(game_name, progress):
+    """Define a function to save the game progress to the log file"""
     game_progress[game_name] = progress
     with open(LOG_FILE, "w", encoding="UTF-8") as log_file2:
         json.dump(game_progress, log_file2)
 
-# Define the main function
-
-
 def main():
+    """Define the main function"""
     while True:
         display_menu()
         choice = prompt_input("Enter your choice: ")
@@ -66,7 +57,6 @@ def main():
             break
         else:
             print("Invalid choice, please try again.")
-
 
 if __name__ == "__main__":
     main()

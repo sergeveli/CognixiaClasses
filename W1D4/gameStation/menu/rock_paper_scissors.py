@@ -1,3 +1,5 @@
+"""Module for playing Rock, Paper, Scissors"""
+
 import random
 
 # Define the game options

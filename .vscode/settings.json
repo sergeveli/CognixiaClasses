@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./W1D4/gameStation/menu"
+    ]
+}

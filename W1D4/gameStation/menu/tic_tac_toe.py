@@ -1,3 +1,5 @@
+"""Module for playing Tic, Tac Toe"""
+
 import random
 
 # Define the game options
