@@ -50,7 +50,7 @@ def main():
             save_progress("rock_paper_scissors", progress)
         elif choice == "2":
             print("Starting Tic Tac Toe...")
-            progress = tic_tac_toe.play_game()
+            progress = tic_tac_toe.play_t3()
             save_progress("tic_tac_toe", progress)
         elif choice == "3":
             print("Exiting...")
