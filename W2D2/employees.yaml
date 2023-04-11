@@ -1,0 +1,15 @@
+- age: 32
+  birth_year: 1991
+  email: first.one91@company.com
+  first: First
+  last: One
+- age: 33
+  birth_year: 1990
+  email: second.one90@company.com
+  first: Second
+  last: One
+- age: 20
+  birth_year: 2003
+  email: third.one03@company.com
+  first: Third
+  last: One
