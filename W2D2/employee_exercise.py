@@ -5,6 +5,8 @@ and a main script that tests the functions in the module.
 This program uses list comprehension to get a list of employees under 30, 
 and it uses filter and map to get a list of emails for employees over 30."""
 
+import yaml
+
 def get_int_input(prompt, within_range=None):
     """
     Prompts the user to enter an integer value and returns it.
@@ -71,6 +73,8 @@ def main():
             "email": email
         }
         emps.append(emp)
+    with open("employees.yaml", "w", encoding="UTF-8") as _f1:
+        yaml.dump(emps, _f1)
 
     with open("employees.txt", "a", encoding="UTF-8") as _f:
         for _ in emps:
